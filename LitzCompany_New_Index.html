@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>가갸거겨고기 | Litz Company</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans KR',sans-serif;background:#0f0f0f;color:#fff;line-height:1.7}
+a{text-decoration:none;color:inherit}
+img{display:block;width:100%}
+.container{width:min(1200px,92%);margin:auto}
+header{position:fixed;top:0;width:100%;z-index:100;background:rgba(15,15,15,.75);backdrop-filter:blur(12px)}
+nav{height:80px;display:flex;justify-content:space-between;align-items:center}
+.logo img{height:56px;width:auto}
+.menu{display:flex;gap:32px}
+.menu a{color:#ddd}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.75)),url('image/hero.jpg') center/cover;display:flex;align-items:center}
+.hero-content{max-width:700px}
+.kicker{color:#caa15d;letter-spacing:3px;font-size:13px}
+.hero h1{font-size:clamp(46px,7vw,88px);line-height:1.05;margin:18px 0}
+.hero p{color:#ddd;font-size:18px}
+section{padding:120px 0}
+.title{text-align:center;margin-bottom:60px}
+.title span{color:#caa15d;letter-spacing:2px;font-size:13px}
+.title h2{font-size:42px;margin-top:10px}
+.about{background:#161616}
+.about p{max-width:900px;margin:auto;text-align:center;color:#d4d4d4}
+.business-item{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin-bottom:80px}
+.business-item img{border-radius:18px;height:420px;object-fit:cover}
+.business-text h3{font-size:36px;margin-bottom:15px}
+.business-text p{color:#ccc}
+.store-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.store-card{background:#181818;padding:35px;border:1px solid #252525;border-radius:18px}
+.store-card h3{color:#caa15d;margin-bottom:15px}
+.csr{background:#161616;text-align:center}
+.csr p{max-width:800px;margin:auto;color:#ccc}
+.footer{background:#0b0b0b;border-top:1px solid #1f1f1f}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:50px;padding:70px 0 40px}
+.footer-brand img{width:70px;margin-bottom:20px}
+.footer-brand h3{color:#caa15d;font-size:30px}
+.footer-brand p{color:#aaa;margin-top:10px}
+.footer-col h4{color:#caa15d;margin-bottom:15px}
+.footer-col p{color:#cfcfcf;margin-bottom:8px}
+.footer-bottom{border-top:1px solid #1f1f1f;padding:25px 0;color:#777;font-size:14px}
+.insta{display:inline-block;margin-top:15px;padding:10px 18px;border:1px solid #caa15d;border-radius:999px;color:#caa15d}
+@media(max-width:900px){
+.menu{display:none}
+.business-item{grid-template-columns:1fr}
+.store-grid,.footer-top{grid-template-columns:1fr}
+section{padding:80px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo"><img src="image/logo.png" alt=""></div>
+<div class="menu">
+<a href="#about">회사소개</a>
+<a href="#business">사업분야</a>
+<a href="#store">매장안내</a>
+</div>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="kicker">LITZ COMPANY</div>
+<h1>신선함을 넘어,<br>식탁의 품격을 전합니다.</h1>
+<p>Premium Meat & Meal Kit Brand</p>
+</div>
+</div>
+</section>
+
+<section id="about" class="about">
+<div class="container">
+<div class="title"><span>ABOUT</span><h2>가갸거겨고기</h2></div>
+<p>
+주식회사 리츠컴퍼니는 프리미엄 정육 및 밀키트 전문 브랜드 가갸거겨고기를 운영합니다.
+최고 품질의 원육을 엄선하고 정성과 기술로 가공하여 고객의 식탁에 신선함과 신뢰를 전달합니다.
+</p>
+</div>
+</section>
+
+<section id="business">
+<div class="container">
+<div class="title"><span>BUSINESS</span><h2>사업 분야</h2></div>
+
+<div class="business-item">
+<img src="image/beef.jpg" alt="">
+<div class="business-text">
+<h3>Premium Meat</h3>
+<p>엄선된 한우, 한돈 및 프리미엄 육류를 선별하여 제공하며, 품질과 신선도를 최우선 가치로 생각합니다.</p>
+</div>
+</div>
+
+<div class="business-item">
+<div class="business-text">
+<h3>Meal Kit</h3>
+<p>누구나 간편하게 즐길 수 있는 프리미엄 밀키트를 통해 더욱 풍요로운 식탁을 제안합니다.</p>
+</div>
+<img src="image/mealkit.jpg" alt="">
+</div>
+
+</div>
+</section>
+
+<section id="store">
+<div class="container">
+<div class="title"><span>STORE</span><h2>매장 안내</h2></div>
+<div class="store-grid">
+<div class="store-card">
+<h3>정왕점</h3>
+<p>경기도 시흥시 중심상가4길 18</p>
+</div>
+<div class="store-card">
+<h3>옥련시장점</h3>
+<p>인천광역시 연수구 독배로40번길 29</p>
+<p>032-832-1990</p>
+</div>
+<div class="store-card">
+<h3>송도점</h3>
+<p>인천광역시 연수구 송도동 커넬워크 여름동 123호, 124호</p>
+<p>070-4795-9333</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="csr">
+<div class="container">
+<div class="title"><span>CSR</span><h2>지역사회와 함께</h2></div>
+<p>옥련시장점을 통해 결식우려 아동 정기 후원을 진행하며 지역사회와 함께 성장하는 기업을 지향합니다.</p>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+
+<div class="footer-top">
+
+<div class="footer-brand">
+<img src="image/logo.png" alt="">
+<h3>Litz Company</h3>
+<p>신선함을 넘어, 신뢰를 전합니다.</p>
+</div>
+
+<div class="footer-col">
+<h4>Company</h4>
+<p>대표이사 김덕환</p>
+<p>사업자등록번호 547-88-02179</p>
+<p>Premium Meat & Meal Kit Brand</p>
+</div>
+
+<div class="footer-col">
+<h4>Connect</h4>
+<p>@gogi._.butcher</p>
+<a class="insta" href="https://www.instagram.com/gogi._.butcher" target="_blank">Instagram</a>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 Litz Company · 가갸거겨 정왕점 · 옥련시장점 · 송도점
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>
